@@ -14,9 +14,37 @@ app.get('/', function (req, res) {
     // res.render('home');
 });
 
-app.get('/:icecream', function (req, res) {
+app.get('/vanilla', function (req, res) {
 
     var data = icecreams[0];
+    res.render('flavor', data);
+    // res.render('home');
+});
+
+app.get('/chocolate', function (req, res) {
+
+    var data = icecreams[1];
+    res.render('flavor', data);
+    // res.render('home');
+});
+
+app.get('/banana', function (req, res) {
+
+    var data = icecreams[2];
+    res.render('flavor', data);
+    // res.render('home');
+});
+
+app.get('/greentea', function (req, res) {
+
+    var data = icecreams[3];
+    res.render('flavor', data);
+    // res.render('home');
+});
+
+app.get('/jawbreakers', function (req, res) {
+
+    var data = icecreams[4];
     res.render('flavor', data);
     // res.render('home');
 });
